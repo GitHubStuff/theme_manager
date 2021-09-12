@@ -8,6 +8,7 @@ class ThemeColors {
   final Color dark;
   final Color light;
   const ThemeColors({required this.dark, required this.light});
-  Color of({required BuildContext context}) => ThemeManager.brightness(context) == Brightness.dark ? dark : light;
+  Color of(BuildContext context) => bright(ThemeManager.brightness(context));
+  Color bright(Brightness brightness) => (brightness == Brightness.dark) ? dark : light;
   factory ThemeColors.mono({required Color color}) => ThemeColors(dark: color, light: color);
 }

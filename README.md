@@ -19,7 +19,7 @@ void main() async {
 There are default **darkTheme**, **lightTheme**, and **themeIcons** but it is best practice to use your own. The colors themes for the app are defined by calling:
 
 ```dart
-ThemeManager(ThemeData? darkTheme, 
+ThemeManager(ThemeData? darkTheme,
              ThemeData? lightTheme,
              ThemeIcons? themeIcons,
              Map<String,ThemeColors>? colorMap);
@@ -81,7 +81,6 @@ enum ThemeState {
 ## Changing Theme
 
 At any point to change the theme:
-
 
 ```dart
 

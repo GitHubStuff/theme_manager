@@ -2,7 +2,7 @@
 // Uses the Hive-NoSQL package to manage theme state (light, dark, or system) for the application to persit across launches
 //
 // NOTE: For testing Hive won't work natively because the directory isn't defined, but _placeholder does so tests can be run
-// - This effectively STUBS the service without have to swizzle in an alternative
+// - This effectively STUBS the service without having to swizzle in an alternative
 part of '../theme_manager.dart';
 
 bool _hiveSetup = false;
